@@ -22,17 +22,19 @@ XCore uses Maven for build. Please install Maven by downloading it [here](http:/
 ```sh
 # Clone XCore git repo
 git clone git://github.com/FINRAOS/JTAF-XCore.git
+
+# Navigate to the sample project
 cd JTAF-XCore/seedProject
 
-# Run verify to execute some tests
-mvn verify
+# Run install to install necessary dependencies
+mvn install
 ```
 
 Running Tests
 ==============
 XCore uses JUnit to run its tests. To start out, jtaf.properties will need to get [defined](http://finraos.github.io/JTAF-XCore/properties.html) in order to choose what tests to run and how to run them. Running XMLTestDriver with JUnit from your IDE or command line will execute the tests as determined by the [strategy](http://finraos.github.io/JTAF-XCore/strategy.html) in the jtaf.properties run configuration.
 
-Once you're ready, XCore allows easy setup to run test suites on the CI ([like Jenkins](http://www.jenkins-ci.org/)) by setting run configuration properties as System variables. Setting the run configuration properties as System variables will override what's defined in jtaf.properties.
+Once you're ready to, XCore allows easy setup to run test suites on the CI ([like Jenkins](http://www.jenkins-ci.org/)) by setting run configuration properties as System variables. Setting the run configuration properties as System variables will override what's defined in jtaf.properties.
 
 ```sh
 # Run verify to run the tests on the CI
