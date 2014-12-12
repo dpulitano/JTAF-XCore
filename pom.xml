@@ -136,7 +136,7 @@
 								<strategy>profiles/strategies/Default.strategy.xml</strategy>
 							</systemPropertyVariables>
 							<includes>
-								<include>**/XMLParallelDriver*</include>
+								<include>**/XMLTestDriver*</include>
 							</includes>
 						</configuration>
 					</execution>
