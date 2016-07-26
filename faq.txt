@@ -1,0 +1,2 @@
+Q: If a test runner plugin fails before or after my test, what happens?
+A: The error's logged. The test will then continue.
